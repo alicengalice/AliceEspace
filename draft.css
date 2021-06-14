@@ -1,0 +1,41 @@
+/* Skill Section */
+.skills-wrapper {
+    width: 100%;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  .skills-wrapper h3 {
+    font-size: 1.5em;
+  }
+  .skill-item {
+    flex: 0 0 30%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-main);
+    margin: 0 15px 15px 0;
+  }
+  .skill-item .skill-content {
+    width: 100%;
+    padding: 30px 30px;
+  }
+  .skill-item:hover {
+    background-color: var(--color-first);
+    cursor: default;
+  }
+  .skill-item:hover h3{
+    color: var(--color-white);
+  }
+  .skill-item:hover p{
+      color: var(--color-white);
+  }
+  
+
+  /* Brand */
+.brand-wrapper {
+  flex-wrap: wrap;
+}
+.brand img {
+  margin: 0 34px;
+}
+.brand img:last-child {
+  margin-right: 0px;
+}

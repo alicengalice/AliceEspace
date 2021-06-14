@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Single Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+
+<body id="appBody">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="nav d-flex">
+                <a href="#">
+                    <img src="resources/alice/alice-logo3.png" alt="logo" class="logo">
+                </a>
+                <!-- TOGGLE BAR -->
+                <div class="burger">
+                    <div class="toggle-open">
+                        <img src="resources/toggle-open.svg" alt="toggle open">
+                    </div>
+                    <div class="toggle-close">
+                        <img src="resources/toggle-close.svg" alt="toggle close">
+                    </div>
+                </div>
+                <div class="navigation-bar">
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#products">Recipes</a></li>
+                        <li><a href="#contactme">Feedback</a></li>
+                        <li><a href="#" class="btn">Let's Chat</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HOME SECTION -->
+        <section class="home d-flex" id="home">
+            <img class="home-image" src="resources/alice/food-2.jpg" alt="home">
+            <div class="container">
+                <div class="home-wrapper">
+                    <div class="col">
+                        <h3>&#128103; Xin chao, welcome to</h3>
+                        <h1>Alice's espace<br></h1>
+                        <p>This is a space where I store my cake and <br>dessert recipes. </p>
+                        <a href="#aboutme" class="btn">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION-->
+        <section class="aboutme pt-100" id="aboutme">
+            <div class="container">
+                <div class="aboutme-wrapper d-flex">
+                    <div class="aboutme-image">
+                        <img src="resources/alice/tea-1.jpg" alt="about me" class="img-fluid">
+                    </div>
+                    <div class="aboutme-content">
+                        <h2>About Me</h2>
+                        <p>My name is Alice. I was born in Saigon, Vietnam and came all the way to Melbourne, Australia
+                            to pursue my Master degree in IT.
+                            I've just graduated from Monash University few months ago.<br>
+                        </p>
+                        <p>In my freetime, I love learning new languages (both programming and human languages) and of
+                            course, baking!
+                            I must say that I have a real sweet tooth and currently baking is one of my biggest hobbies
+                            besides music and badminton.
+                            Discovering that I can bake (and you can too!) helps me a lot to face with stressful
+                            situations in life.
+                            When life gives you lemon, you can bake lemon cake!
+                        </p>
+                        <p>Espace means 'space' in French and since I have a background of 16 years learning French, I
+                            named my space as Alice's Espace (or L'Espace d'Alice)
+                            to store - firstly all the recipes that I love (and sucessfully tried!), and all other
+                            things that I can think of later.
+                        </p>
+                        <a href="#products" class="btn">See Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT SECTION-->
+        <section class="products pt-100">
+            <div class="container" id="blur">
+                <!-- SECTION TITLES -->
+                <div class="title-section">
+                    <h2>Recipes</h2>
+                    <p>
+                        I love it when my place is covered with butter and flour smell. Here are the recipes that I tried and I love them so much!!
+                    </p>
+                </div>
+
+                <div class="product-wrapper d-flex">
+                    <!-- PRODUCT ITEM 1-->
+                    <div class="product-item" onclick="toggle()" id="apple-tart">
+                        <img src="resources/alice/apple-tart.jpeg" alt="product" class="img-fluid">
+                        <div class="product-content">
+                            <h4 class="d-flex">
+                                Apple Tart <span>1 hour</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- PRODUCT ITEM 2-->
+                    <div class="product-item" onclick="toggle()" id="vanilla-cupcake">
+                        <img src="resources/alice/cupcake.jpg" alt="product" class="img-fluid">
+                        <div class="product-content">
+                            <h4 class="d-flex">
+                                Vanilla Cupcakes <span>1 hour</span>
+                            </h4>
+                        </div>
+                    </div>
+                    <!-- PRODUCT ITEM 3-->
+                    <div class="product-item" onclick="toggle()" id="japanese-chesscake">
+                        <img src="resources/alice/cheesecake.jpeg" alt="product" class="img-fluid">
+                        <div class="product-content">
+                            <h4 class="d-flex">
+                                Japanese Cheesecake <span>1 hour</span></span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-popup d-flex">
+                <div class="pop-up" id="item1">
+                    <div class="content">
+                        <h2>Apple Tart</h2>
+                        <p><b>Total time:</b> 1 hour <br> <b>Servings:</b> 6</p>
+                        <h3>Ingredients </h3>
+                        <ul>
+                            <li>&#9825; 2 medium-sized apples</li>
+                            <li>&#9825; 1 tablespoon cinamon</li>
+                            <li>&#9825; 2/4 cup granulated sugar</li>
+                            <li>&#9825; 8 tablespoons butter</li>
+                            <li>&#9825; 1/4 cup flour</li>
+                            <li>&#9825; 1 egg</li>
+                            <li>&#9825; 1 tablespoon lemon juice</li>
+                            <li>&#9825; 2 sheets thawed puff pastry</li>
+                            <li>&#9825; 1/4 cup water</li>
+                        </ul>
+                        <h3>Steps</h3>
+                        <ul>
+                            <li>1. Cut the apples into small pieces and set them aside.</li>
+                            <li>2. Melt the butter in a medium heat pan.</li>
+                            <li>3. When the butter is completely melted, add sugar and 1/4 cup water also 1/4 cup.</li>
+                            <li>4. Stir the combination until it well combines, then take the pan out from the heat.
+                            </li>
+                            <li>5. Put the apple pieces in a big bowl, add cinamon and mix well until combine.</li>
+                            <li>6. Once the apples are well mixed with cinamon powder, add the butter sugar mixture in
+                                the bowl of applies.</li>
+                            <li>7. Mix it well and set it aside.</li>
+                            <li>8. Cut the pastry in 12 equal square pieces.</li>
+                            <li>9. Mix the egg in a small bowl. Use a brush to cover the 4 corners of the pastry pieces,
+                                leave the center for the apple filling.</li>
+                            <li>10. Put the apple filling in the middle of 6 pastry pieces, then cover with the other
+                                half.</li>
+                            <li>11. Use a folk to seal all the sides of two pastry pieces.</li>
+                            <li>12. Now we have the unbaked apple turnovers, put them in the fridge for 20 mins.</li>
+                            <li>13. In the meantime, preheate the over with 200 degrees Celcius for 10-15 mins.</li>
+                            <li>14. Take the apple tarts out from the fridge, bake in the oven for 25 mins.</li>
+                            <li>15. After 25 mins, your apple tarts are so goo to enjoy!</li>
+                        </ul>
+                        <a href="#products" onclick="toggle()" class="btn" id="close">Close</a>
+                    </div>
+                </div>
+                <div class="pop-up" id="item1">
+                    <div class="content">
+                        <h2>Vanilla Cupcake</h2>
+                        <p><b>Total time:</b> 1 hour <br> <b>Servings:</b> 6</p>
+                        <h3>Ingredients </h3>
+                        <ul>
+                            <li>&#9825; 2 medium-sized apples</li>
+                            <li>&#9825; 1 tablespoon cinamon</li>
+                            <li>&#9825; 2/4 cup granulated sugar</li>
+                            <li>&#9825; 8 tablespoons butter</li>
+                            <li>&#9825; 1/4 cup flour</li>
+                            <li>&#9825; 1 egg</li>
+                            <li>&#9825; 1 tablespoon lemon juice</li>
+                            <li>&#9825; 2 sheets thawed puff pastry</li>
+                            <li>&#9825; 1/4 cup water</li>
+                        </ul>
+                        <h3>Steps</h3>
+                        <ul>
+                            <li>1. Cut the apples into small pieces and set them aside.</li>
+                            <li>2. Melt the butter in a medium heat pan.</li>
+                            <li>3. When the butter is completely melted, add sugar and 1/4 cup water also 1/4 cup.</li>
+                            <li>4. Stir the combination until it well combines, then take the pan out from the heat.
+                            </li>
+                            <li>5. Put the apple pieces in a big bowl, add cinamon and mix well until combine.</li>
+                            <li>6. Once the apples are well mixed with cinamon powder, add the butter sugar mixture in
+                                the bowl of applies.</li>
+                            <li>7. Mix it well and set it aside.</li>
+                            <li>8. Cut the pastry in 12 equal square pieces.</li>
+                            <li>9. Mix the egg in a small bowl. Use a brush to cover the 4 corners of the pastry pieces,
+                                leave the center for the apple filling.</li>
+                            <li>10. Put the apple filling in the middle of 6 pastry pieces, then cover with the other
+                                half.</li>
+                            <li>11. Use a folk to seal all the sides of two pastry pieces.</li>
+                            <li>12. Now we have the unbaked apple turnovers, put them in the fridge for 20 mins.</li>
+                            <li>13. In the meantime, preheate the over with 200 degrees Celcius for 10-15 mins.</li>
+                            <li>14. Take the apple tarts out from the fridge, bake in the oven for 25 mins.</li>
+                            <li>15. After 25 mins, your apple tarts are so goo to enjoy!</li>
+                        </ul>
+                        <a href="#products" onclick="toggle()" class="btn" id="close">Close</a>
+                    </div>
+                </div>
+                <div class="pop-up" id="item1">
+                    <div class="content">
+                        <h2>Japanese Cheesecake</h2>
+                        <p><b>Total time:</b> 1 hour <br> <b>Servings:</b> 6</p>
+                        <h3>Ingredients </h3>
+                        <ul>
+                            <li>&#9825; 2 medium-sized apples</li>
+                            <li>&#9825; 1 tablespoon cinamon</li>
+                            <li>&#9825; 2/4 cup granulated sugar</li>
+                            <li>&#9825; 8 tablespoons butter</li>
+                            <li>&#9825; 1/4 cup flour</li>
+                            <li>&#9825; 1 egg</li>
+                            <li>&#9825; 1 tablespoon lemon juice</li>
+                            <li>&#9825; 2 sheets thawed puff pastry</li>
+                            <li>&#9825; 1/4 cup water</li>
+                        </ul>
+                        <h3>Steps</h3>
+                        <ul>
+                            <li>1. Cut the apples into small pieces and set them aside.</li>
+                            <li>2. Melt the butter in a medium heat pan.</li>
+                            <li>3. When the butter is completely melted, add sugar and 1/4 cup water also 1/4 cup.</li>
+                            <li>4. Stir the combination until it well combines, then take the pan out from the heat.
+                            </li>
+                            <li>5. Put the apple pieces in a big bowl, add cinamon and mix well until combine.</li>
+                            <li>6. Once the apples are well mixed with cinamon powder, add the butter sugar mixture in
+                                the bowl of applies.</li>
+                            <li>7. Mix it well and set it aside.</li>
+                            <li>8. Cut the pastry in 12 equal square pieces.</li>
+                            <li>9. Mix the egg in a small bowl. Use a brush to cover the 4 corners of the pastry pieces,
+                                leave the center for the apple filling.</li>
+                            <li>10. Put the apple filling in the middle of 6 pastry pieces, then cover with the other
+                                half.</li>
+                            <li>11. Use a folk to seal all the sides of two pastry pieces.</li>
+                            <li>12. Now we have the unbaked apple turnovers, put them in the fridge for 20 mins.</li>
+                            <li>13. In the meantime, preheate the over with 200 degrees Celcius for 10-15 mins.</li>
+                            <li>14. Take the apple tarts out from the fridge, bake in the oven for 25 mins.</li>
+                            <li>15. After 25 mins, your apple tarts are so goo to enjoy!</li>
+                        </ul>
+                        <a href="#products" onclick="toggle()" class="btn" id="close">Close</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- CONTACT ME SECTION -->
+        <section class="contactme ptb-100" id="contactme">
+            <div class="container">
+                <div class="title-section">
+                    <h2>Feedback</h2>
+                    <p>Want to provide some feedback? Sure, feel free to let me know!</p>
+                    <div class="contactme-wrapper">
+                        <input type="text" placeholder="Your thoughts...">
+                        <a href="#" class="btn">Click to Send</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pt-100">
+        <div class="container">
+            <a href="#home">
+                <img src="resources/alice/alice-logo3.png" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <!-- Copyright -->
+            <div class="copyright pt-100">
+                <h4>Made with <span>❤</span> by Alice</h4>
+                <p>Credit goes to Elegant Coder for the amazing website template</p>
+                <p>Created my free logo at <a href="https://logomakr.com/" class="logomakr">LogoMakr.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup show" id="arrow-up">
+        <img src="resources/arrow-up.svg" alt="arrow up">
+    </a>
+
+</body>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
