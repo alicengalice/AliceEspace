@@ -1,11 +1,11 @@
-# Alice's Espace (or L'espace d'Alice)
-## Description
+# :cherry_blossom: Alice's Espace (or L'espace d'Alice) :cherry_blossom:
+## :partly_sunny: Description
 A mini website storing baking recipes.
-## Features
+## :cake: Features
 * Providing Recipes with Ingredients list and Step-by-step guidance.
 * [TODO] Provide Calorie for each recipe
 * [TODO] ...
 
-## Credits
-- Credit goes to Elegant Coder for the amazing website template
+## :tea: Credits
+- Credit to Elegant Coder for website template
 - Created my free logo at LogoMakr.com
